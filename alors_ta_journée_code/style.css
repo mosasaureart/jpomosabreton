@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('fonts/Playfair_Display.zip') format('opentype');
+}
+
+@font-face {
+  font-family: 'Patrick Hand';
+  src: url('fonts/Patrick_Hand.zip') format('opentype');
+}
+
+
+body {
+  margin: 0;
+  background-image: url("img/fond.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#book-container {
+  position: relative;
+  width: 820px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-flip-book {
+  width: 800px;
+  height: 550px;
+}
+
+.page {
+  background-color: rgb(236, 236, 226);
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.page h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.page p {
+    font-family: 'Patrick Hand', cursive;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.page .page-signature {
+font-family: 'Playfair Display', serif;
+  align-self: flex-start;
+  font-style: italic;
+  margin-top: auto;
+}
+
+/* Page de couverture */
+.cover-page {
+  background-image: url("img/canva.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cover-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cover-content h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.cover-content .author {
+  font-size: 1em;
+  margin-top: 10px;
+  opacity: 0.8;
+}
